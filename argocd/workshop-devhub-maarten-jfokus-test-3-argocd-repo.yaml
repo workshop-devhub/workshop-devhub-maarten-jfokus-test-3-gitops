@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: workshop-devhub-maarten-jfokus-test-3-repo
+  namespace: workshop-devhub
+  labels:
+    argocd.argoproj.io/secret-type: repository
+stringData:
+  url: https://github.com/workshop-devhub/workshop-devhub-maarten-jfokus-test-3-gitops.git
